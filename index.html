@@ -15,107 +15,42 @@
         text-decoration: none;
       }
       li {
-        text-decoration: none;
+        list-style: none;
       }
-      /* transform */
-      .box1 {
-        width: 200px;
-        height: 200px;
-        background-color: red;
-        color: white;
-        line-height: 200px;
+      ul {
+        /* ul 距离上面的距离 15px */
+        margin-top: 15px;
+      }
+      ul li {
+        /* 给li 添加0.4s的过渡 */
+        transition: all 0.4s;
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+        /* 圆形效果 */
+        border-radius: 50%;
+        /* li 左浮动 */
+        float: left;
+        /* 行高 垂直居中 */
+        line-height: 50px;
+        /* 左右居中 */
         text-align: center;
-        transition: all 0.2s;
+        /* 每个圆圈的距离 上下0px 左右10px */
+        margin: 0px 10px;
       }
-      .box1:hover {
-        /* 平移函数 translate() */
-        /* 第一个数值x轴,第二个数y轴 */
-        /* 不会影响其他盒子的位置 */
-        transform: translate(50px, 0px);
-        cursor: pointer;
-      }
-      .box2 {
-        width: 200px;
-        height: 200px;
-        background-color: green;
-        color: white;
-        line-height: 200px;
-        text-align: center;
-        transition: all 0.2s;
-      }
-      .box2:hover {
-        /* 旋转函数 rotate() */
-        /* 数值为度数 deg */
-        transform: rotate(50deg);
-        cursor: pointer;
-      }
-      .box3 {
-        width: 200px;
-        height: 200px;
-        background-color: blue;
-        color: white;
-        line-height: 200px;
-        text-align: center;
-        transition: all 0.2s;
-      }
-      .box3:hover {
-        /* 缩放函数 scale() 默认值是1 */
-        /* 第一个数值x轴(宽度),第二个数y轴(高度) */
-        /* 只有一个数值代表x,y相同 */
-        /* 以中心点缩放 不会影响其他盒子 */
-        transform: scale(0.5, 0.5);
-        cursor: pointer;
-      }
-      .box4 {
-        width: 200px;
-        height: 200px;
-        background-color: yellow;
-        color: white;
-        line-height: 200px;
-        text-align: center;
-        transition: all 0.2s;
-      }
-      .box4:hover {
-        /* 倾斜函数 skew() */
-        transform: skew(20deg, 20deg);
-      }
-      .box5 {
-        width: 200px;
-        height: 200px;
-        background-color: black;
-        color: white;
-        line-height: 200px;
-        text-align: center;
-        transition: all 0.5s;
-      }
-      .box5:hover {
-        cursor: pointer;
-        /* 向右平移 缩放 旋转 倾斜 */
-        transform: translate(100px, 0px) scale(1.5) rotate(360deg) skew(20deg);
-      }
-      .box6 {
-        width: 200px;
-        height: 200px;
-        background-color: skyblue;
-        color: white;
-        line-height: 200px;
-        text-align: center;
-        transition: all 0.2s;
-      }
-      .box6:hover {
-        cursor: pointer;
-        transform: rotate(90deg);
-        /* transform-origin 设置圆心 为右下 */
-        transform-origin: right bottom;
+      ul li:hover {
+        /* 鼠标悬浮 旋转 360deg 放大1.5 */
+        transform: rotate(360deg) scale(1.5);
       }
     </style>
   </head>
   <body>
-    <div class="box1">平移函数</div>
-    <div class="box2">旋转函数</div>
-    <div class="box3">缩放函数</div>
-    <div class="box4">倾斜函数</div>
-    <div class="box5">综合写法</div>
-    <div class="box6">旋转圆心</div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
   </body>
 </html>
