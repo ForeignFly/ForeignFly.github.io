@@ -1,0 +1,20 @@
+/* 主体部分02 */
+.sec_02 {
+    margin-top:10px;
+}
+.sec02_list_one {
+    width: 208px;
+    height: 163px;
+    background-color: #5c5251;
+    float:left;
+}
+.sec02_list_one h1 {
+    color:white;
+    text-align: center;
+    line-height: 163px;
+}
+.sec02_list ul li {
+    width:248px;
+    height: 163px;
+    float:left;
+}
