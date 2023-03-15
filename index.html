@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .box {
+        margin: 0 auto;
+        height: 500px;
+        width: 500px;
+      }
+      .one > li {
+        float: left;
+        margin: 0px 10px;
+      }
+      .one > li {
+        width: 75px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid #999;
+      }
+      .one > li a {
+        color: #666;
+      }
+      .one > li ul {
+        display: none;
+      }
+      .one > li ul li {
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-bottom: 1px solid #999;
+      }
+      .one > li ul li:hover {
+        border-bottom: 1px solid red;
+      }
+      .one > li ul li:hover a {
+        color: red;
+      }
+      .one > li span {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border: 2px solid #999;
+        border-top: none;
+        border-left: none;
+        margin-bottom: 2px;
+        transform: rotate(45deg);
+        transition: all 0.3s;
+        border-radius: 1px;
+      }
+      .one > li:hover span {
+        transform: rotate(-135deg);
+      }
+      .one > li:hover {
+        border: 1px solid red;
+        cursor: pointer;
+      }
+      .one > li:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <ul class="one">
+        <li>
+          <a href="#">商店</a>
+          <span></span>
+          <ul class="two">
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">库存</a>
+          <span></span>
+          <ul>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">帮助</a>
+          <span></span>
+          <ul>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">客服</a>
+          <span></span>
+          <ul>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">我的</a>
+          <span></span>
+          <ul>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+            <li><a href="#">列表</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
