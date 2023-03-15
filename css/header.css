@@ -1,0 +1,63 @@
+/* 头部 */
+.header {
+    margin:25px 0px;
+}
+/* 头部logo */
+.header_logo {
+    float:left;
+}
+.header_logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background:url(../images/logo.png) no-repeat;
+    font-size:0px;
+    float:left;
+}
+/* 头部搜索 */
+.header_search {
+    /* background-color: pink; */
+    float:left;
+    margin-left:180px;
+}
+.header_search input  {
+    width:446px;
+    height:32px;
+    border:2px solid #b1191a;
+    padding-left:10px;
+    float:left;
+}
+.header_search button {
+    width:80px;
+    height:32px;
+    background-color: #b1191a;
+    /* border:1px solid #b1191a; */
+    float:left;
+    color:white;
+    font-size:14px;
+}
+.header_search button:hover {
+    cursor:pointer;
+}
+.header_search_nav ul li {
+    float:left;
+    font-size:12px;
+    padding:10px 10px;
+}
+/* 头部购物车 */
+.header_shopcar {
+    float:right;
+    margin-right:50px;
+    background: url(../images/2.png) no-repeat 105px center;
+}
+.header_shopcar a {
+    display: block;
+    width:140px;
+    height: 35px;
+    background-color: #f7f7f7;
+    border:1px solid #dfdfdf;
+    font-size:12px;
+    line-height: 35px;
+    text-align: center;
+    background: url(../images/shopcar.png) no-repeat 15px center;
+}

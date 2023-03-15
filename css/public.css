@@ -1,0 +1,38 @@
+/* 公共样式 */
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body {
+    color:#666;
+}
+a {
+    color: #666;
+    text-decoration: none
+}
+a:hover {
+    color: #c81623
+}
+li {
+    list-style:none;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+input {
+    outline:none;
+}
+button {
+    border:none;
+}
+.w1200 {
+    width:1200px;
+    margin:0 auto;
+}
+.clear:after {
+    content:'';
+    display: block;
+    clear:both;
+}
