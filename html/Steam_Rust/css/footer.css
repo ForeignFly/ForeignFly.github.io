@@ -1,0 +1,53 @@
+.footer {
+    height: 160px;
+    position:relative;
+    z-index:9;
+    background-color: #171a21;
+    margin-bottom:50px;
+}
+.footer_text {
+    margin: 0px auto;
+    padding-top: 10px;
+    height: 68px;
+    position:absolute;
+    top:30px;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: #171a21;
+    border:1px solid #363c44;
+    border-left:none;
+    border-right:none;
+}
+.f_logo {
+    float:left;
+    margin-right:10px;
+}
+.f_logo img {
+    height: 25px;
+}
+.mid_text {
+    color:#8f98a0;
+    font-size:12px;
+    float:left;
+}
+.mid_text div a {
+    color:#c6d4df;
+}
+.mid_text div a:hover {
+    color:white;
+}
+.f_logo_right {
+    float:right;
+}
+.valve_links {
+    position:absolute;
+    top:120px;
+    font-size:12px;
+    color:#1f456d;
+}
+.valve_links a {
+    color:#c6d4d1;
+}
+.valve_links a:hover {
+    color:white;
+}
