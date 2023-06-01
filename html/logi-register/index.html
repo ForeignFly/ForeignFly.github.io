@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logi ID</title>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/swiper.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 外包裹 -->
+    <div class="box">
+      <!-- 头部标题图片 -->
+      <header class="header_title">
+        <img src="imgs/1b0fd6ef863e0878568d383693db98a0.png" alt="" />
+        <h3>创建一个账户</h3>
+        <p>完成所有字段以创建您的 Logi ID。</p>
+      </header>
+      <!-- 表单组件 -->
+      <section class="section">
+        <!-- 表单 -->
+        <form action="../logi-login/index.html" method="post">
+          <div class="sec_name"><input type="text" placeholder="名" /></div>
+          <div class="sec_name"><input type="text" placeholder="性" /></div>
+          <div class="sec_email"><input type="email" placeholder="电子邮件地址" /></div>
+          <div class="sec_password"><input type="password" placeholder="密码" /></div>
+          <div class="sec_title">
+            <input type="checkbox" />
+            <span>是的，我想接收新闻和电子产品邮件。</span>
+          </div>
+          <div class="sec_title_2">
+            创建帐户即表示您同意我们的
+            <a href="#">服务条款</a>
+            并已查看我们的
+            <a href="#">隐私政策</a>。 本网站受 hCaptcha 保护，适用其
+            <a href="#">隐私政策</a>
+            和
+            <a href="#">服务条款</a>。
+          </div>
+          <div class="sec_submit">
+            <input type="submit" value="注册" />
+          </div>
+          <div class="sec_huozhe">
+            <span></span>
+          </div>
+          <!-- Swiper -->
+          <div id="login_img">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://id.logi.com/9ccd5a01ef71b435026328059606dc7e.svg" alt="" /></div>
+                <div class="swiper-slide"><img src="https://id.logi.com/1d38aa5e1117e00cbb295ea216fd0170.svg" alt="" /></div>
+                <div class="swiper-slide"><img src="https://id.logi.com/6c0831c20a035499158869446d9157e6.svg" alt="" /></div>
+                <div class="swiper-slide"><img src="https://id.logi.com/a76f7d8016c7424c1d3aa7a8b6b6d67c.svg" alt="" /></div>
+                <div class="swiper-slide"><img src="https://id.logi.com/bd8ac1ef8a8ebfc83d46a5b240930325.svg" alt="" /></div>
+                <div class="swiper-slide"><img src="https://id.logi.com/43ec3a55227f4a7fb110cc4936c4dbc4.svg" alt="" /></div>
+                <div class="swiper-slide"><img src="https://id.logi.com/bb8f8721b4bd844d746cbe5fa8209e64.svg" alt="" /></div>
+                <div class="swiper-slide"><img src="https://id.logi.com/9ccd5a01ef71b435026328059606dc7e.svg" alt="" /></div>
+                <div class="swiper-slide"><img src="https://id.logi.com/1d38aa5e1117e00cbb295ea216fd0170.svg" alt="" /></div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="sec_bottom">
+            <a href="../logi-login/index.html">有一个账户？登录</a>
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/autoRem2.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
